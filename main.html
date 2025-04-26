@@ -12,36 +12,42 @@
     <h2 class="mb-4">Internship Application Form</h2>
     
     <form class="needs-validation" novalidate>
+      <!-- First Name -->
       <div class="mb-3">
         <label for="first-name-input" class="form-label">First Name</label>
         <input type="text" class="form-control" id="first-name-input" required>
         <div class="invalid-feedback">Please enter your first name.</div>
       </div>
 
+      <!-- Last Name -->
       <div class="mb-3">
         <label for="last-name-input" class="form-label">Last Name</label>
         <input type="text" class="form-control" id="last-name-input" required>
         <div class="invalid-feedback">Please enter your last name.</div>
       </div>
 
+      <!-- Email -->
       <div class="mb-3">
-  <label for="email-input" class="form-label">Email</label>
+        <label for="email-input" class="form-label">Email</label>
         <input type="email" class="form-control" id="email-input" required>
-        <div class="invalid-feedback">Please enter a valid email.</div>
+        <div class="invalid-feedback">Please enter a valid email address.</div>
       </div>
 
+      <!-- College Name -->
       <div class="mb-3">
         <label for="college-input" class="form-label">College Name</label>
         <input type="text" class="form-control" id="college-input" required>
         <div class="invalid-feedback">Please enter your college name.</div>
       </div>
 
+      <!-- Roll No -->
       <div class="mb-3">
         <label for="roll-no-input" class="form-label">Roll No</label>
         <input type="text" class="form-control" id="roll-no-input" required>
         <div class="invalid-feedback">Please enter your roll number.</div>
       </div>
 
+      <!-- Graduation Year -->
       <div class="mb-3">
         <label for="grad-year" class="form-label">Graduation Year</label>
         <select class="form-select" id="grad-year" required>
@@ -54,19 +60,20 @@
         <div class="invalid-feedback">Please select your graduation year.</div>
       </div>
 
+      <!-- Conditions Checkbox -->
       <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="conditions-checkbox" required>
         <label class="form-check-label" for="conditions-checkbox">I agree to the terms and conditions</label>
         <div class="invalid-feedback">You must agree before submitting.</div>
       </div>
 
+      <!-- Submit Button -->
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
 
   <!-- Bootstrap 5 JS (with validation support) -->
   <script>
-    // Bootstrap validation
     (() => {
       'use strict'
       const forms = document.querySelectorAll('.needs-validation')
